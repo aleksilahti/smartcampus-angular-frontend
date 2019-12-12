@@ -1,1 +1,11 @@
 <div id="map"></div>
+<div class="center" *ngIf="!canAddDevice">
+  <button class="button" style="opacity: 0.7">status: all</button>
+  <button class="button" (click)="enableDeviceAdd()">Add device</button>
+  <button class="button" style="opacity: 0.7">Sort by: all</button>
+</div>
+
+<div class="center" *ngIf=canAddDevice>
+    <button class="cancelButton" (click)="disableDeviceAdd()">Cancel</button>
+  </div>
+

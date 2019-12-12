@@ -11,13 +11,13 @@ export class MapComponent implements OnInit {
   @Input() sensors: any;
   sensorArrayLength: number;
   map: any;
+  canAddDevice: boolean = false;
   co2RedIcon = this.addIcon('assets/co2red.svg');
   co2YellowIcon = this.addIcon('assets/co2yellow.svg');
   co2GreenIcon = this.addIcon('assets/co2green.svg');
   soundRedIcon = this.addIcon('assets/soundred.svg');
   soundYellowIcon = this.addIcon('assets/soundyellow.svg');
   soundGreenIcon = this.addIcon('assets/soundgreen.svg');
-  self = this;
   constructor(private deviceService: DeviceService) {
   }
 
@@ -107,6 +107,17 @@ export class MapComponent implements OnInit {
   }
   
   addNewDevice( event ) {
-    this.deviceService.openNewDeviceDialog( event.latlng.lat, event.latlng.lng )
+    if(this.canAddDevice){
+      this.deviceService.openNewDeviceDialog( event.latlng.lat, event.latlng.lng )
+      this.canAddDevice = false;
+      }
+  }
+  disableDeviceAdd(){
+    console.log("action cancelled");
+    this.canAddDevice = false;
+  }
+  enableDeviceAdd(){
+    console.log("device add enabled");
+    this.canAddDevice = true;
   }
 }

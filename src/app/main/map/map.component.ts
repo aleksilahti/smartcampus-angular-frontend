@@ -31,11 +31,11 @@ export class MapComponent implements OnInit {
     this.map = L.map('map').setView([65.0591022, 25.4665], 16);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '<a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-        minZoom: 16,
+        minZoom: 5,
         maxZoom: 25
     }).addTo(this.map);
     //geolocation
-    this.map.locate({setView: false, maxZoom: 16});
+    this.map.locate({setView: false});
     this.map.on('locationfound', this.onLocationFound.bind(this));
     //click event handling(add marker)
     this.map.on('click', this.addNewDevice.bind(this) );
@@ -44,7 +44,6 @@ export class MapComponent implements OnInit {
     //Add sensor markers
     this.addMarkersToMap( this.map );
     this.sensorArrayLength = this.sensors.length;
-    console.log(this.sensorArrayLength);
   }
 
   ngDoCheck(){
@@ -127,7 +126,7 @@ export class MapComponent implements OnInit {
   addNewDevice( event ) {
     if(this.canAddDevice){
       this.deviceService.openNewDeviceDialog( event.latlng.lat, event.latlng.lng )
-      this.canAddDevice = false;
+      this.disableDeviceAdd()
       }
   }
   disableDeviceAdd(){

@@ -51,15 +51,15 @@ button:hover{
     -webkit-transition-duration: 0.4s;
     border-radius: 1px;
     margin: 5px;
-    width: 90%;
+    max-width: 30%;
     border-radius: 10px;
     border-collapse: separate; 
     
 }
 .cancelButton:hover{
     transition-duration: 0.4s;
-    background-color: white;
-    border: 2px solid white;
+    background-color: lightgrey;
+    border: 2px solid red;
     color: black;
     border-radius: 10px;
     border-collapse: separate; 

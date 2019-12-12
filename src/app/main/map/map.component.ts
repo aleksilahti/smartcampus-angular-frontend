@@ -18,6 +18,12 @@ export class MapComponent implements OnInit {
   soundRedIcon = this.addIcon('assets/soundred.svg');
   soundYellowIcon = this.addIcon('assets/soundyellow.svg');
   soundGreenIcon = this.addIcon('assets/soundgreen.svg');
+  location = L.icon({
+    iconUrl: 'assets/location.svg',
+    iconSize:     [10, 10], // size of the icon
+    iconAnchor:   [5, 5], // point of the icon which will correspond to marker's location
+    popupAnchor:  [0, -5] // point from which the popup should open relative to the iconAnchor
+  });
   constructor(private deviceService: DeviceService) {
   }
 
@@ -112,8 +118,8 @@ export class MapComponent implements OnInit {
     console.log("geolocating");
     let radius = event.accuracy;
 
-    L.marker(event.latlng).addTo(this.map)
-        .bindPopup("You are within " + radius + " meters from this point").openPopup();
+    L.marker(event.latlng, {icon: this.location} ).addTo(this.map)
+        .bindPopup("You are within " + radius + " meters from this point");
 
     L.circle(event.latlng, radius).addTo(this.map);
   }

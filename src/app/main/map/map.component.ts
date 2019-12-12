@@ -28,6 +28,9 @@ export class MapComponent implements OnInit {
         minZoom: 16,
         maxZoom: 25
     }).addTo(this.map);
+    //geolocation
+    this.map.locate({setView: false, maxZoom: 16});
+    this.map.on('locationfound', this.onLocationFound.bind(this));
     //click event handling(add marker)
     this.map.on('click', this.addNewDevice.bind(this) );
     //add linnanmaa campus overlay
@@ -104,6 +107,15 @@ export class MapComponent implements OnInit {
 
       }
     }
+  }
+  onLocationFound(event) {
+    console.log("geolocating");
+    let radius = event.accuracy;
+
+    L.marker(event.latlng).addTo(this.map)
+        .bindPopup("You are within " + radius + " meters from this point").openPopup();
+
+    L.circle(event.latlng, radius).addTo(this.map);
   }
   
   addNewDevice( event ) {

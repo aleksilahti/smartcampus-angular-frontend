@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import * as uuid from '../../node_modules/uuid';
 import { HttpClient } from '@angular/common/http';
+import Data from '../assets/sensors.json';
 
 @Injectable({
   providedIn: 'root'
@@ -3327,8 +3328,8 @@ sensors = [
 
   getSensors(){
     //sensors is a list of sensor objects this function is a placeholder for a database query
-  console.log(JSON.stringify(this.http.get(this.sensorsUrl)));
-  return this.http.get(this.sensorsUrl);
+  console.log(JSON.stringify(Data));
+  return Data;
   }
 
   openNewDeviceDialog(latitude?, longitude?){

@@ -103,7 +103,7 @@ export class MapComponent implements OnInit {
 
       if(this.sensors[i].deviceType === 'co2Sensor'){
         let popup = '<p>'+ this.sensors[i].deviceId + '</p>'
-        L.marker([this.sensors[i].coordinates.latitude, this.sensors[i].coordinates.longitude], {icon: this.chooseIcon(this.sensors[i])}).addTo(map).bindPopup(popup);;
+        L.marker([this.sensors[i].coordinates.latitude - 0.00009 , this.sensors[i].coordinates.longitude  + 0.00036], {icon: this.chooseIcon(this.sensors[i])}).addTo(map).bindPopup(popup);;
 
       } else if(this.sensors[i].deviceType === 'soundSensor'){
 

@@ -1,10 +1,12 @@
 import { Injectable } from '@angular/core';
 import * as uuid from '../../node_modules/uuid';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class DeviceService {
+  sensorsUrl = 'assets/data.json';
 sensors = [
   {
     deviceType: 'co2Sensor', 
@@ -1928,7 +1930,7 @@ sensors = [
 },
   {
     deviceType: 'co2Sensor', 
-    status: 'installed',
+    status: 'removed',
     serial: 193,
     deviceId: 'A81758FFFE031015',
     locationId: 'tellus',
@@ -1938,7 +1940,7 @@ sensors = [
 },
   {
     deviceType: 'co2Sensor', 
-    status: 'installed',
+    status: 'removed',
     serial: 194,
     deviceId: 'A81758FFFE031014',
     locationId: 'tellus',
@@ -1948,7 +1950,7 @@ sensors = [
 },
   {
     deviceType: 'co2Sensor', 
-    status: 'installed',
+    status: 'removed',
     serial: 195,
     deviceId: 'A81758FFFE03108C',
     locationId: 'tellus',
@@ -1958,7 +1960,7 @@ sensors = [
 },
   {
     deviceType: 'co2Sensor', 
-    status: 'installed',
+    status: 'removed',
     serial: 196,
     deviceId: 'A81758FFFE031013',
     locationId: 'tellus',
@@ -1968,7 +1970,7 @@ sensors = [
 },
   {
     deviceType: 'co2Sensor', 
-    status: 'installed',
+    status: 'removed',
     serial: 197,
     deviceId: 'A81758FFFE031012',
     locationId: 'tellus',
@@ -1978,7 +1980,7 @@ sensors = [
 },
   {
     deviceType: 'co2Sensor', 
-    status: 'installed',
+    status: 'removed',
     serial: 198,
     deviceId: 'A81758FFFE031011',
     locationId: 'tellus',
@@ -1988,7 +1990,7 @@ sensors = [
 },
   {
     deviceType: 'co2Sensor', 
-    status: 'installed',
+    status: 'removed',
     serial: 199,
     deviceId: 'A81758FFFE031010',
     locationId: 'tellus',
@@ -2038,7 +2040,7 @@ sensors = [
 },
   {
     deviceType: 'co2Sensor', 
-    status: 'installed',
+    status: 'removed',
     serial: 204,
     deviceId: 'A81758FFFE03100B',
     locationId: 'tellus',
@@ -2048,7 +2050,7 @@ sensors = [
 },
   {
     deviceType: 'co2Sensor', 
-    status: 'installed',
+    status: 'removed',
     serial: 205,
     deviceId: 'A81758FFFE03100A',
     locationId: 'tellus',
@@ -2058,7 +2060,7 @@ sensors = [
 },
   {
     deviceType: 'co2Sensor', 
-    status: 'installed',
+    status: 'removed',
     serial: 206,
     deviceId: 'A81758FFFE03108B',
     locationId: 'tellus',
@@ -2068,7 +2070,7 @@ sensors = [
 },
   {
     deviceType: 'co2Sensor', 
-    status: 'installed',
+    status: 'removed',
     serial: 207,
     deviceId: 'A81758FFFE030FFE',
     locationId: 'tellus',
@@ -2078,7 +2080,7 @@ sensors = [
 },
   {
     deviceType: 'co2Sensor', 
-    status: 'installed',
+    status: 'removed',
     serial: 208,
     deviceId: 'A81758FFFE030FFD',
     locationId: 'tellus',
@@ -2088,7 +2090,7 @@ sensors = [
 },
   {
     deviceType: 'co2Sensor', 
-    status: 'installed',
+    status: 'removed',
     serial: 209,
     deviceId: 'A81758FFFE030FFB',
     locationId: 'tellus',
@@ -2098,7 +2100,7 @@ sensors = [
 },
   {
     deviceType: 'co2Sensor', 
-    status: 'installed',
+    status: 'removed',
     serial: 210,
     deviceId: 'A81758FFFE030FF8',
     locationId: 'tellus',
@@ -2148,7 +2150,7 @@ sensors = [
 },
   {
     deviceType: 'co2Sensor', 
-    status: 'installed',
+    status: 'removed',
     serial: 215,
     deviceId: 'A81758FFFE030FF4',
     locationId: 'tellus',
@@ -2158,7 +2160,7 @@ sensors = [
 },
   {
     deviceType: 'co2Sensor', 
-    status: 'installed',
+    status: 'removed',
     serial: 216,
     deviceId: 'A81758FFFE030FF3',
     locationId: 'tellus',
@@ -2168,7 +2170,7 @@ sensors = [
 },
   {
     deviceType: 'co2Sensor', 
-    status: 'installed',
+    status: 'removed',
     serial: 217,
     deviceId: 'A81758FFFE03108A',
     locationId: 'tellus',
@@ -2178,7 +2180,7 @@ sensors = [
 },
   {
     deviceType: 'co2Sensor', 
-    status: 'installed',
+    status: 'removed',
     serial: 218,
     deviceId: 'A81758FFFE030FF2',
     locationId: 'tellus',
@@ -2188,7 +2190,7 @@ sensors = [
 },
   {
     deviceType: 'co2Sensor', 
-    status: 'installed',
+    status: 'removed',
     serial: 219,
     deviceId: 'A81758FFFE030D4F',
     locationId: 'tellus',
@@ -2198,7 +2200,7 @@ sensors = [
 },
   {
     deviceType: 'co2Sensor', 
-    status: 'installed',
+    status: 'removed',
     serial: 220,
     deviceId: 'A81758FFFE030FF1',
     locationId: 'tellus',
@@ -2208,7 +2210,7 @@ sensors = [
 },
   {
     deviceType: 'co2Sensor', 
-    status: 'installed',
+    status: 'removed',
     serial: 221,
     deviceId: 'A81758FFFE030FF0',
     locationId: 'tellus',
@@ -2258,7 +2260,7 @@ sensors = [
 },
   {
     deviceType: 'co2Sensor', 
-    status: 'installed',
+    status: 'removed',
     serial: 226,
     deviceId: 'A81758FFFE030FEB',
     locationId: 'tellus',
@@ -2268,7 +2270,7 @@ sensors = [
 },
   {
     deviceType: 'co2Sensor', 
-    status: 'installed',
+    status: 'removed',
     serial: 227,
     deviceId: 'A81758FFFE030FEA',
     locationId: 'tellus',
@@ -2278,7 +2280,7 @@ sensors = [
 },
   {
     deviceType: 'co2Sensor', 
-    status: 'installed',
+    status: 'removed',
     serial: 228,
     deviceId: 'A81758FFFE031089',
     locationId: 'tellus',
@@ -2288,7 +2290,7 @@ sensors = [
 },
   {
     deviceType: 'co2Sensor', 
-    status: 'installed',
+    status: 'removed',
     serial: 229,
     deviceId: 'A81758FFFE030FE9',
     locationId: 'tellus',
@@ -2298,7 +2300,7 @@ sensors = [
 },
   {
     deviceType: 'co2Sensor', 
-    status: 'installed',
+    status: 'removed',
     serial: 230,
     deviceId: 'A81758FFFE030FE8',
     locationId: 'tellus',
@@ -2308,7 +2310,7 @@ sensors = [
 },
   {
     deviceType: 'co2Sensor', 
-    status: 'installed',
+    status: 'removed',
     serial: 231,
     deviceId: 'A81758FFFE030FE7',
     locationId: 'tellus',
@@ -2318,7 +2320,7 @@ sensors = [
 },
   {
     deviceType: 'co2Sensor', 
-    status: 'installed',
+    status: 'removed',
     serial: 232,
     deviceId: 'A81758FFFE030FE6',
     locationId: 'tellus',
@@ -2358,7 +2360,7 @@ sensors = [
 },
   {
     deviceType: 'co2Sensor', 
-    status: 'installed',
+    status: 'removed',
     serial: 236,
     deviceId: 'A81758FFFE030FE0',
     locationId: 'tellus',
@@ -2368,7 +2370,7 @@ sensors = [
 },
   {
     deviceType: 'co2Sensor', 
-    status: 'installed',
+    status: 'removed',
     serial: 237,
     deviceId: 'A81758FFFE031088',
     locationId: 'tellus',
@@ -2378,7 +2380,7 @@ sensors = [
 },
   {
     deviceType: 'co2Sensor', 
-    status: 'installed',
+    status: 'removed',
     serial: 238,
     deviceId: 'A81758FFFE030FDF',
     locationId: 'tellus',
@@ -2388,7 +2390,7 @@ sensors = [
 },
   {
     deviceType: 'co2Sensor', 
-    status: 'installed',
+    status: 'removed',
     serial: 239,
     deviceId: 'A81758FFFE030D4E',
     locationId: 'tellus',
@@ -2398,7 +2400,7 @@ sensors = [
 },
   {
     deviceType: 'co2Sensor', 
-    status: 'installed',
+    status: 'removed',
     serial: 240,
     deviceId: 'A81758FFFE030FDE',
     locationId: 'tellus',
@@ -2408,7 +2410,7 @@ sensors = [
 },
   {
     deviceType: 'co2Sensor', 
-    status: 'installed',
+    status: 'removed',
     serial: 241,
     deviceId: 'A81758FFFE030FDD',
     locationId: 'tellus',
@@ -2418,7 +2420,7 @@ sensors = [
 },
   {
     deviceType: 'co2Sensor', 
-    status: 'installed',
+    status: 'removed',
     serial: 242,
     deviceId: 'A81758FFFE030FDC',
     locationId: 'tellus',
@@ -2448,7 +2450,7 @@ sensors = [
 },
   {
     deviceType: 'co2Sensor', 
-    status: 'installed',
+    status: 'removed',
     serial: 245,
     deviceId: 'A81758FFFE030FD9',
     locationId: 'tellus',
@@ -2458,7 +2460,7 @@ sensors = [
 },
   {
     deviceType: 'co2Sensor', 
-    status: 'installed',
+    status: 'removed',
     serial: 246,
     deviceId: 'A81758FFFE030FD8',
     locationId: 'tellus',
@@ -2468,7 +2470,7 @@ sensors = [
 },
   {
     deviceType: 'co2Sensor', 
-    status: 'installed',
+    status: 'removed',
     serial: 247,
     deviceId: 'A81758FFFE031087',
     locationId: 'tellus',
@@ -2478,7 +2480,7 @@ sensors = [
 },
   {
     deviceType: 'co2Sensor', 
-    status: 'installed',
+    status: 'removed',
     serial: 248,
     deviceId: 'A81758FFFE030FD7',
     locationId: 'tellus',
@@ -2488,7 +2490,7 @@ sensors = [
 },
   {
     deviceType: 'co2Sensor', 
-    status: 'installed',
+    status: 'removed',
     serial: 249,
     deviceId: 'A81758FFFE030FD6',
     locationId: 'tellus',
@@ -2498,7 +2500,7 @@ sensors = [
 },
   {
     deviceType: 'co2Sensor', 
-    status: 'installed',
+    status: 'removed',
     serial: 250,
     deviceId: 'A81758FFFE030FD5',
     locationId: 'tellus',
@@ -2558,7 +2560,7 @@ sensors = [
 },
   {
     deviceType: 'co2Sensor', 
-    status: 'installed',
+    status: 'removed',
     serial: 256,
     deviceId: 'A81758FFFE031078',
     locationId: 'tellus',
@@ -2568,7 +2570,7 @@ sensors = [
 },
   {
     deviceType: 'co2Sensor', 
-    status: 'installed',
+    status: 'removed',
     serial: 257,
     deviceId: 'A81758FFFE031077',
     locationId: 'tellus',
@@ -2578,7 +2580,7 @@ sensors = [
 },
   {
     deviceType: 'co2Sensor', 
-    status: 'installed',
+    status: 'removed',
     serial: 258,
     deviceId: 'A81758FFFE031076',
     locationId: 'tellus',
@@ -2588,7 +2590,7 @@ sensors = [
 },
   {
     deviceType: 'co2Sensor', 
-    status: 'installed',
+    status: 'removed',
     serial: 259,
     deviceId: 'A81758FFFE031075',
     locationId: 'tellus',
@@ -2648,7 +2650,7 @@ sensors = [
 },
   {
     deviceType: 'co2Sensor', 
-    status: 'installed',
+    status: 'removed',
     serial: 265,
     deviceId: 'A81758FFFE031083',
     locationId: 'tellus',
@@ -2658,7 +2660,7 @@ sensors = [
 },
   {
     deviceType: 'co2Sensor', 
-    status: 'installed',
+    status: 'removed',
     serial: 266,
     deviceId: 'A81758FFFE031080',
     locationId: 'tellus',
@@ -2668,7 +2670,7 @@ sensors = [
 },
   {
     deviceType: 'co2Sensor', 
-    status: 'installed',
+    status: 'removed',
     serial: 267,
     deviceId: 'A81758FFFE03107F',
     locationId: 'tellus',
@@ -2678,7 +2680,7 @@ sensors = [
 },
   {
     deviceType: 'co2Sensor', 
-    status: 'installed',
+    status: 'removed',
     serial: 268,
     deviceId: 'A81758FFFE03107E',
     locationId: 'tellus',
@@ -2738,7 +2740,7 @@ sensors = [
 },
   {
     deviceType: 'co2Sensor', 
-    status: 'installed',
+    status: 'removed',
     serial: 274,
     deviceId: 'A81758FFFE03103F',
     locationId: 'tellus',
@@ -2748,7 +2750,7 @@ sensors = [
 },
   {
     deviceType: 'co2Sensor', 
-    status: 'installed',
+    status: 'removed',
     serial: 275,
     deviceId: 'A81758FFFE031086',
     locationId: 'tellus',
@@ -2818,7 +2820,7 @@ sensors = [
 },
   {
     deviceType: 'co2Sensor', 
-    status: 'installed',
+    status: 'removed',
     serial: 282,
     deviceId: 'A81758FFFE030FE4',
     locationId: 'tellus',
@@ -2828,7 +2830,7 @@ sensors = [
 },
   {
     deviceType: 'co2Sensor', 
-    status: 'installed',
+    status: 'removed',
     serial: 283,
     deviceId: 'A81758FFFE031095',
     locationId: 'tellus',
@@ -2838,7 +2840,7 @@ sensors = [
 },
   {
     deviceType: 'co2Sensor', 
-    status: 'installed',
+    status: 'removed',
     serial: 284,
     deviceId: 'A81758FFFE031085',
     locationId: 'tellus',
@@ -2928,7 +2930,7 @@ sensors = [
 },
   {
     deviceType: 'co2Sensor', 
-    status: 'installed',
+    status: 'removed',
     serial: 293,
     deviceId: 'A81758FFFE030D4C',
     locationId: 'tellus',
@@ -2938,7 +2940,7 @@ sensors = [
 },
   {
     deviceType: 'co2Sensor', 
-    status: 'installed',
+    status: 'removed',
     serial: 294,
     deviceId: 'A81758FFFE030D4D',
     locationId: 'tellus',
@@ -3028,7 +3030,7 @@ sensors = [
 },
   {
     deviceType: 'co2Sensor', 
-    status: 'installed',
+    status: 'removed',
     serial: 303,
     deviceId: 'A81758FFFE030D4B',
     locationId: 'tellus',
@@ -3038,7 +3040,7 @@ sensors = [
 },
   {
     deviceType: 'co2Sensor', 
-    status: 'installed',
+    status: 'removed',
     serial: 304,
     deviceId: 'A81758FFFE030D4A',
     locationId: 'tellus',
@@ -3048,7 +3050,7 @@ sensors = [
 },
   {
     deviceType: 'co2Sensor', 
-    status: 'installed',
+    status: 'removed',
     serial: 305,
     deviceId: 'A81758FFFE031084',
     locationId: 'tellus',
@@ -3138,7 +3140,7 @@ sensors = [
 },
   {
     deviceType: 'co2Sensor', 
-    status: 'installed',
+    status: 'removed',
     serial: 314,
     deviceId: 'A81758FFFE031082',
     locationId: 'tellus',
@@ -3148,7 +3150,7 @@ sensors = [
 },
   {
     deviceType: 'co2Sensor', 
-    status: 'installed',
+    status: 'removed',
     serial: 315,
     deviceId: 'A81758FFFE031081',
     locationId: 'tellus',
@@ -3321,11 +3323,12 @@ sensors = [
   overlay;
   latitude;
   longitude;
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
   getSensors(){
     //sensors is a list of sensor objects this function is a placeholder for a database query
-  return this.sensors;
+  console.log(JSON.stringify(this.http.get(this.sensorsUrl)));
+  return this.http.get(this.sensorsUrl);
   }
 
   openNewDeviceDialog(latitude?, longitude?){

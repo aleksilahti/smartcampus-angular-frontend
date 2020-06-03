@@ -28,7 +28,7 @@ export class MapComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.map = L.map('map').setView([65.0591022, 25.4665], 16);
+    this.map = L.map('map').setView([65.0586010, 25.4659], 19);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '<a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
         minZoom: 5,
@@ -73,7 +73,7 @@ export class MapComponent implements OnInit {
         icon = this.co2GreenIcon;
       }else if(device.status === 'installed'){
         icon = this.co2YellowIcon;
-      }else if(device.status === 'planned'){
+      }else if(device.status === 'removed'){
         icon = this.co2RedIcon;
       }
     } else if(device.deviceType === 'soundSensor'){
@@ -81,7 +81,7 @@ export class MapComponent implements OnInit {
         icon = this.soundGreenIcon;
       }else if(device.status === 'installed'){
         icon = this.soundYellowIcon;
-      }else if(device.status === 'planned'){
+      }else if(device.status === 'removed'){
         icon = this.soundRedIcon;
       }
     }
@@ -102,7 +102,7 @@ export class MapComponent implements OnInit {
     for(let i=0; i < this.sensors.length; i++){
 
       if(this.sensors[i].deviceType === 'co2Sensor'){
-        let popup = '<p>Hello world!<br />This is a fancy popup.</p><br /><img class="popup" src="assets/ERSsensor.jpg">' + '<p>CO2 sensor looks like this ↑ <br/>Could this be used to display a picture of the mounting location?<p/>'
+        let popup = '<p>'+ this.sensors[i].deviceId + '</p>'
         L.marker([this.sensors[i].coordinates.latitude, this.sensors[i].coordinates.longitude], {icon: this.chooseIcon(this.sensors[i])}).addTo(map).bindPopup(popup);;
 
       } else if(this.sensors[i].deviceType === 'soundSensor'){

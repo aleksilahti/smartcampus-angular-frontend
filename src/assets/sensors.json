@@ -243,7 +243,7 @@
    },
    {
       "deviceType":"co2Sensor",
-      "status":"installed",
+      "status":"removed",
       "serial":23,
       "deviceId":"A81758FFFE030F55",
       "locationId":"tellus",
@@ -254,7 +254,7 @@
    },
    {
       "deviceType":"co2Sensor",
-      "status":"installed",
+      "status":"removed",
       "serial":24,
       "deviceId":"A81758FFFE030F54",
       "locationId":"tellus",
@@ -265,7 +265,7 @@
    },
    {
       "deviceType":"co2Sensor",
-      "status":"installed",
+      "status":"removed",
       "serial":25,
       "deviceId":"A81758FFFE030F53",
       "locationId":"tellus",
@@ -287,7 +287,7 @@
    },
    {
       "deviceType":"co2Sensor",
-      "status":"installed",
+      "status":"removed",
       "serial":27,
       "deviceId":"A81758FFFE030F50",
       "locationId":"tellus",
@@ -661,7 +661,7 @@
    },
    {
       "deviceType":"co2Sensor",
-      "status":"installed",
+      "status":"removed",
       "serial":61,
       "deviceId":"A81758FFFE030F75",
       "locationId":"tellus",
@@ -672,7 +672,7 @@
    },
    {
       "deviceType":"co2Sensor",
-      "status":"installed",
+      "status":"removed",
       "serial":62,
       "deviceId":"A81758FFFE030F74",
       "locationId":"tellus",
@@ -683,7 +683,7 @@
    },
    {
       "deviceType":"co2Sensor",
-      "status":"installed",
+      "status":"removed",
       "serial":63,
       "deviceId":"A81758FFFE030F73",
       "locationId":"tellus",
@@ -694,7 +694,7 @@
    },
    {
       "deviceType":"co2Sensor",
-      "status":"installed",
+      "status":"removed",
       "serial":64,
       "deviceId":"A81758FFFE030F70",
       "locationId":"tellus",
@@ -705,7 +705,7 @@
    },
    {
       "deviceType":"co2Sensor",
-      "status":"installed",
+      "status":"removed",
       "serial":65,
       "deviceId":"A81758FFFE030F71",
       "locationId":"tellus",
@@ -804,7 +804,7 @@
    },
    {
       "deviceType":"co2Sensor",
-      "status":"installed",
+      "status":"removed",
       "serial":74,
       "deviceId":"A81758FFFE030F76",
       "locationId":"tellus",
@@ -815,7 +815,7 @@
    },
    {
       "deviceType":"co2Sensor",
-      "status":"installed",
+      "status":"removed",
       "serial":75,
       "deviceId":"A81758FFFE030F77",
       "locationId":"tellus",
@@ -826,7 +826,7 @@
    },
    {
       "deviceType":"co2Sensor",
-      "status":"installed",
+      "status":"removed",
       "serial":76,
       "deviceId":"A81758FFFE030F78",
       "locationId":"tellus",
@@ -837,7 +837,7 @@
    },
    {
       "deviceType":"co2Sensor",
-      "status":"installed",
+      "status":"removed",
       "serial":77,
       "deviceId":"A81758FFFE030F7A",
       "locationId":"tellus",
@@ -925,7 +925,7 @@
    },
    {
       "deviceType":"co2Sensor",
-      "status":"installed",
+      "status":"removed",
       "serial":85,
       "deviceId":"A81758FFFE030F85",
       "locationId":"tellus",
@@ -936,7 +936,7 @@
    },
    {
       "deviceType":"co2Sensor",
-      "status":"installed",
+      "status":"removed",
       "serial":86,
       "deviceId":"A81758FFFE030F83",
       "locationId":"tellus",
@@ -947,7 +947,7 @@
    },
    {
       "deviceType":"co2Sensor",
-      "status":"installed",
+      "status":"removed",
       "serial":87,
       "deviceId":"A81758FFFE030F82",
       "locationId":"tellus",
@@ -958,7 +958,7 @@
    },
    {
       "deviceType":"co2Sensor",
-      "status":"installed",
+      "status":"removed",
       "serial":88,
       "deviceId":"A81758FFFE030F7E",
       "locationId":"tellus",
@@ -969,7 +969,7 @@
    },
    {
       "deviceType":"co2Sensor",
-      "status":"installed",
+      "status":"removed",
       "serial":89,
       "deviceId":"A81758FFFE030F7D",
       "locationId":"tellus",
@@ -980,7 +980,7 @@
    },
    {
       "deviceType":"co2Sensor",
-      "status":"installed",
+      "status":"removed",
       "serial":90,
       "deviceId":"A81758FFFE030F7B",
       "locationId":"tellus",
@@ -1057,7 +1057,7 @@
    },
    {
       "deviceType":"co2Sensor",
-      "status":"installed",
+      "status":"removed",
       "serial":97,
       "deviceId":"A81758FFFE030F87",
       "locationId":"tellus",
@@ -1068,7 +1068,7 @@
    },
    {
       "deviceType":"co2Sensor",
-      "status":"installed",
+      "status":"removed",
       "serial":98,
       "deviceId":"A81758FFFE030F88",
       "locationId":"tellus",
@@ -1079,7 +1079,7 @@
    },
    {
       "deviceType":"co2Sensor",
-      "status":"installed",
+      "status":"removed",
       "serial":99,
       "deviceId":"A81758FFFE030F89",
       "locationId":"tellus",
@@ -1090,7 +1090,7 @@
    },
    {
       "deviceType":"co2Sensor",
-      "status":"installed",
+      "status":"removed",
       "serial":100,
       "deviceId":"A81758FFFE030F8A",
       "locationId":"tellus",
@@ -1101,7 +1101,7 @@
    },
    {
       "deviceType":"co2Sensor",
-      "status":"installed",
+      "status":"removed",
       "serial":101,
       "deviceId":"A81758FFFE030F8B",
       "locationId":"tellus",
@@ -1112,7 +1112,7 @@
    },
    {
       "deviceType":"co2Sensor",
-      "status":"installed",
+      "status":"removed",
       "serial":102,
       "deviceId":"A81758FFFE030F8C",
       "locationId":"tellus",
@@ -1189,7 +1189,7 @@
    },
    {
       "deviceType":"co2Sensor",
-      "status":"installed",
+      "status":"removed",
       "serial":109,
       "deviceId":"A81758FFFE030F94",
       "locationId":"tellus",
@@ -1200,7 +1200,7 @@
    },
    {
       "deviceType":"co2Sensor",
-      "status":"installed",
+      "status":"removed",
       "serial":110,
       "deviceId":"A81758FFFE030F93",
       "locationId":"tellus",
@@ -1211,7 +1211,7 @@
    },
    {
       "deviceType":"co2Sensor",
-      "status":"installed",
+      "status":"removed",
       "serial":111,
       "deviceId":"A81758FFFE030F92",
       "locationId":"tellus",
@@ -1222,7 +1222,7 @@
    },
    {
       "deviceType":"co2Sensor",
-      "status":"installed",
+      "status":"removed",
       "serial":112,
       "deviceId":"A81758FFFE030F91",
       "locationId":"tellus",
@@ -1233,7 +1233,7 @@
    },
    {
       "deviceType":"co2Sensor",
-      "status":"installed",
+      "status":"removed",
       "serial":113,
       "deviceId":"A81758FFFE030F8F",
       "locationId":"tellus",
@@ -1244,7 +1244,7 @@
    },
    {
       "deviceType":"co2Sensor",
-      "status":"installed",
+      "status":"removed",
       "serial":114,
       "deviceId":"A81758FFFE030F8E",
       "locationId":"tellus",
@@ -1255,7 +1255,7 @@
    },
    {
       "deviceType":"co2Sensor",
-      "status":"installed",
+      "status":"removed",
       "serial":115,
       "deviceId":"A81758FFFE030F8D",
       "locationId":"tellus",
@@ -1321,7 +1321,7 @@
    },
    {
       "deviceType":"co2Sensor",
-      "status":"installed",
+      "status":"removed",
       "serial":121,
       "deviceId":"A81758FFFE030F95",
       "locationId":"tellus",
@@ -1332,7 +1332,7 @@
    },
    {
       "deviceType":"co2Sensor",
-      "status":"installed",
+      "status":"removed",
       "serial":122,
       "deviceId":"A81758FFFE030F96",
       "locationId":"tellus",
@@ -1343,7 +1343,7 @@
    },
    {
       "deviceType":"co2Sensor",
-      "status":"installed",
+      "status":"removed",
       "serial":123,
       "deviceId":"A81758FFFE030F97",
       "locationId":"tellus",
@@ -1354,7 +1354,7 @@
    },
    {
       "deviceType":"co2Sensor",
-      "status":"installed",
+      "status":"removed",
       "serial":124,
       "deviceId":"A81758FFFE030F99",
       "locationId":"tellus",
@@ -1420,7 +1420,7 @@
    },
    {
       "deviceType":"co2Sensor",
-      "status":"installed",
+      "status":"removed",
       "serial":130,
       "deviceId":"A81758FFFE030F9E",
       "locationId":"tellus",
@@ -1431,7 +1431,7 @@
    },
    {
       "deviceType":"co2Sensor",
-      "status":"installed",
+      "status":"removed",
       "serial":131,
       "deviceId":"A81758FFFE030F9D",
       "locationId":"tellus",
@@ -1442,7 +1442,7 @@
    },
    {
       "deviceType":"co2Sensor",
-      "status":"installed",
+      "status":"removed",
       "serial":132,
       "deviceId":"A81758FFFE030F9C",
       "locationId":"tellus",
@@ -1497,7 +1497,7 @@
    },
    {
       "deviceType":"co2Sensor",
-      "status":"installed",
+      "status":"removed",
       "serial":137,
       "deviceId":"A81758FFFE030F69",
       "locationId":"tellus",
@@ -1508,7 +1508,7 @@
    },
    {
       "deviceType":"co2Sensor",
-      "status":"installed",
+      "status":"removed",
       "serial":138,
       "deviceId":"A81758FFFE030F68",
       "locationId":"tellus",
@@ -1519,7 +1519,7 @@
    },
    {
       "deviceType":"co2Sensor",
-      "status":"installed",
+      "status":"removed",
       "serial":139,
       "deviceId":"A81758FFFE030F9F",
       "locationId":"tellus",
@@ -1574,7 +1574,7 @@
    },
    {
       "deviceType":"co2Sensor",
-      "status":"installed",
+      "status":"remove",
       "serial":144,
       "deviceId":"A81758FFFE030FA0",
       "locationId":"tellus",
@@ -1585,7 +1585,7 @@
    },
    {
       "deviceType":"co2Sensor",
-      "status":"installed",
+      "status":"removed",
       "serial":145,
       "deviceId":"A81758FFFE030F6F",
       "locationId":"tellus",
@@ -1596,7 +1596,7 @@
    },
    {
       "deviceType":"co2Sensor",
-      "status":"installed",
+      "status":"removed",
       "serial":146,
       "deviceId":"A81758FFFE030F6A",
       "locationId":"tellus",
@@ -1673,7 +1673,7 @@
    },
    {
       "deviceType":"co2Sensor",
-      "status":"installed",
+      "status":"removed",
       "serial":153,
       "deviceId":"A81758FFFE030FA1",
       "locationId":"tellus",

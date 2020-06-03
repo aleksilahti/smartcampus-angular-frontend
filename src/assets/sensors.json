@@ -1882,7 +1882,7 @@
    },
    {
       "deviceType":"co2Sensor",
-      "status":"installed",
+      "status":"removed",
       "serial":172,
       "deviceId":"A81758FFFE031028",
       "locationId":"tellus",
@@ -1970,7 +1970,7 @@
    },
    {
       "deviceType":"co2Sensor",
-      "status":"installed",
+      "status":"removed",
       "serial":180,
       "deviceId":"A81758FFFE03101F",
       "locationId":"tellus",
@@ -1981,7 +1981,7 @@
    },
    {
       "deviceType":"co2Sensor",
-      "status":"installed",
+      "status":"removed",
       "serial":181,
       "deviceId":"A81758FFFE03101E",
       "locationId":"tellus",

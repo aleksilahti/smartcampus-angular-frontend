@@ -3488,7 +3488,7 @@
    },
    {
       "deviceType":"co2Sensor",
-      "status":"installed",
+      "status":"removed",
       "serial":318,
       "deviceId":"A81758FFFE030FAC",
       "locationId":"tellus",
